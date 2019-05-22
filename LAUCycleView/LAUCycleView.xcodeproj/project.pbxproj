@@ -15,8 +15,8 @@
 		B0BA1F0422941A9100BC7D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BA1F0222941A9100BC7D2A /* LaunchScreen.storyboard */; };
 		B0BA1F0F22941A9100BC7D2A /* LAUCycleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA1F0E22941A9100BC7D2A /* LAUCycleViewTests.swift */; };
 		B0BA1F1A22941A9200BC7D2A /* LAUCycleViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA1F1922941A9200BC7D2A /* LAUCycleViewUITests.swift */; };
-		B0BA1F2922941AC600BC7D2A /* LAUPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA1F2722941AC600BC7D2A /* LAUPageControl.swift */; };
-		B0BA1F2A22941AC600BC7D2A /* LAUCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA1F2822941AC600BC7D2A /* LAUCycleView.swift */; };
+		B0BA1F512294EF3500BC7D2A /* LAUPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA1F4F2294EF3500BC7D2A /* LAUPageControl.swift */; };
+		B0BA1F522294EF3500BC7D2A /* LAUCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA1F502294EF3500BC7D2A /* LAUCycleView.swift */; };
 		DCBA50B4B0329C4629699B9A /* Pods_LAUCycleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFF21DBD7FF4928F6118056 /* Pods_LAUCycleView.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,8 @@
 		B0BA1F1522941A9100BC7D2A /* LAUCycleViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LAUCycleViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BA1F1922941A9200BC7D2A /* LAUCycleViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAUCycleViewUITests.swift; sourceTree = "<group>"; };
 		B0BA1F1B22941A9200BC7D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0BA1F2722941AC600BC7D2A /* LAUPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAUPageControl.swift; sourceTree = "<group>"; };
-		B0BA1F2822941AC600BC7D2A /* LAUCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAUCycleView.swift; sourceTree = "<group>"; };
+		B0BA1F4F2294EF3500BC7D2A /* LAUPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAUPageControl.swift; sourceTree = "<group>"; };
+		B0BA1F502294EF3500BC7D2A /* LAUCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LAUCycleView.swift; sourceTree = "<group>"; };
 		CAA18D5FB6F8EDA83C1A34CB /* Pods-LAUCycleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LAUCycleView.release.xcconfig"; path = "Target Support Files/Pods-LAUCycleView/Pods-LAUCycleView.release.xcconfig"; sourceTree = "<group>"; };
 		ED2D7A23B6A348F363A6360C /* Pods-LAUCycleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LAUCycleView.debug.xcconfig"; path = "Target Support Files/Pods-LAUCycleView/Pods-LAUCycleView.debug.xcconfig"; sourceTree = "<group>"; };
 		FBFF21DBD7FF4928F6118056 /* Pods_LAUCycleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LAUCycleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +91,6 @@
 				ED2D7A23B6A348F363A6360C /* Pods-LAUCycleView.debug.xcconfig */,
 				CAA18D5FB6F8EDA83C1A34CB /* Pods-LAUCycleView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,9 +119,8 @@
 		B0BA1EF522941A8200BC7D2A /* LAUCycleView */ = {
 			isa = PBXGroup;
 			children = (
+				B0BA1F4E2294EF3500BC7D2A /* LAUCycleView */,
 				B0BA1EF622941A8200BC7D2A /* AppDelegate.swift */,
-				B0BA1F2822941AC600BC7D2A /* LAUCycleView.swift */,
-				B0BA1F2722941AC600BC7D2A /* LAUPageControl.swift */,
 				B0BA1EF822941A8200BC7D2A /* ViewController.swift */,
 				B0BA1EFA22941A8200BC7D2A /* Main.storyboard */,
 				B0BA1F0022941A9100BC7D2A /* Assets.xcassets */,
@@ -149,6 +147,15 @@
 				B0BA1F1B22941A9200BC7D2A /* Info.plist */,
 			);
 			path = LAUCycleViewUITests;
+			sourceTree = "<group>";
+		};
+		B0BA1F4E2294EF3500BC7D2A /* LAUCycleView */ = {
+			isa = PBXGroup;
+			children = (
+				B0BA1F4F2294EF3500BC7D2A /* LAUPageControl.swift */,
+				B0BA1F502294EF3500BC7D2A /* LAUCycleView.swift */,
+			);
+			path = LAUCycleView;
 			sourceTree = "<group>";
 		};
 		CD97BA9EE6FCC1CB1F2BB880 /* Frameworks */ = {
@@ -339,11 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0BA1F2A22941AC600BC7D2A /* LAUCycleView.swift in Sources */,
+				B0BA1F522294EF3500BC7D2A /* LAUCycleView.swift in Sources */,
 				B0BA1EF922941A8200BC7D2A /* ViewController.swift in Sources */,
 				B0BA1EF722941A8200BC7D2A /* AppDelegate.swift in Sources */,
 				B0BA1EFF22941A8200BC7D2A /* LAUCycleView.xcdatamodeld in Sources */,
-				B0BA1F2922941AC600BC7D2A /* LAUPageControl.swift in Sources */,
+				B0BA1F512294EF3500BC7D2A /* LAUPageControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
