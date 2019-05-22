@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+
+target 'LAUCycleView' do
+  use_frameworks!
+
+   pod 'Kingfisher'
+
+end
