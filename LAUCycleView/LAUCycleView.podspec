@@ -16,15 +16,15 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LAUCycleView"
-  spec.version      = "0.0.1"
-  spec.summary      = "bannner for ios"
+  spec.version      = "0.0.2"
+  spec.summary      = "Highly customizable banner for ios"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "高度可自定义的轮播图,可以通过自定义的cell来定制轮播的内容,也可以随意更改pageControl的样式"
+  spec.description  = "一个高度可自定义的轮播图"
 
   spec.homepage     = "https://github.com/lausen34/LAUCycleView"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -62,8 +62,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-   spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  # spec.platform     = :ios
+    spec.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/lausen34/LAUCycleView.git", :tag => "0.0.1" }
+  spec.source       = { :git => "https://github.com/lausen34/LAUCycleView.git", :tag => "0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = "LAUCycleView", "LAUCycleView/LAUCycleView/**/*.swift"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -115,8 +115,8 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-    spec.framework  = "UIKit"
-  # spec.frameworks = "SomeFramework","AnotherFramework"
+   spec.framework  = "UIKit"
+  # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -131,6 +131,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency 'Kingfisher', '~> 5.4.0'
+  # spec.dependency "JSONKit", "~> 1.4"
 
 end
